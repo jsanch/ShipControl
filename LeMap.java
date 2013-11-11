@@ -40,6 +40,16 @@ public class LeMap{
         }
    	}
 
+    public void addShip(Rectangle position, int direction,
+                    int speed, String type){
+        if (type == "Boat") ships.add(new LeBoat());
+        if (type == "Yatch") ships.add(new LeYatch());
+        if (type == "Sub") ships.add(new LeSubmarine());
+
+        
+
+    }
+
     public void drawGrid (Graphics g){    	
             // This adapts to the window size and changes when resized.
     		Dimension size = canvas.getSize();

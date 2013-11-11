@@ -9,7 +9,6 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-//
 public abstract class LeShip {
 	/* Instance Variables */
 	protected Rectangle position; 

@@ -63,7 +63,8 @@ public class Main extends JFrame {
    	// Putting Left Pane ( a scrollbar)
    	LeScrollBar s1 = new LeScrollBar ("VERTICAL");
 	content.add (s1, BorderLayout.WEST);
-
+	
+/* Listener */ 
 
 	// Show the window
 	setVisible (true);

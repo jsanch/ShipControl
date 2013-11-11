@@ -12,8 +12,8 @@ import javax.swing.border.*;
 public class LeCanvas extends JComponent {
   	// need to have map 
   	private LeMap map;
-  	Graphics g;
-  	private Color background; 
+
+  	public enum ShipType {BOAT, YATCH, SUB};
 
   	public LeCanvas(){  
     	setBorder (new LineBorder(Color.CYAN, 2));
@@ -24,7 +24,6 @@ public class LeCanvas extends JComponent {
     }
     
     public void paintComponent (Graphics g) {
-    	//paint background. 
 		map.draw(g);
     }
 
